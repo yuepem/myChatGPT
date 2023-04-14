@@ -15,27 +15,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// app.get("/", async (req, res) => {
-    // const { message } = req.body;
-
-//     const response = await openai.createChatCompletion({
-//         model: "gpt-3.5-turbo",
-//         messages: [
-//             {
-//                 role: "user",
-//                 content: `${message}`
-//                 // content: "hi there"
-//             }
-//         ]
-//     });
-//     // res.json({
-//     //     bot: response.data.choices[0].message.content
-//     // })
-
-//     res.status(200).send({
-//         message: response.data.choices[0].message.content
-//     })
-// })
+app.get('/', async (req, res) => {
+    res.status(200).send({
+      message: 'Hello, I am alive !'
+    })
+  })
 
 app.post("/", async (req, res) => {
     try {

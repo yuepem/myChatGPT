@@ -41,7 +41,7 @@ const handleSubmit = async (e) => {
     // const responseMessage = document.getElementById(responseId);
 
 
-    const response = await fetch(' http://localhost:5000', {
+    const response = await fetch('https://mychatgpt-lnnu.onrender.com', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
