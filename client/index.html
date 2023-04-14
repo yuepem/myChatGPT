@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="root">
+        <div class="container">
+            <!-- A chat list -->
+            <div class="chat_list">
+                <div class="newChatButton">
+                    <div class="new_chat"><a href="">+ New chat</a></div>
+                    <div class="chat_channel">
+                        <div class="chat_channel_a"><a href="">chat A</a> </div>
+                        <div class="chat_channel_b"><a href="">chat B</a></div>
+                    </div>
+                </div>
+                <div class="chat_item">
+                    <ul>
+                        <li class="chat_title"><a href=""></a>chat 1</li>
+                        <li class="chat_title"><a href=""></a>chat 2</li>
+                        <li class="chat_title"><a href=""></a>chat 3</li>
+                        <li class="chat_title"><a href=""></a>chat 4</li>
+                    </ul>
+                </div>
+                <div class="account">
+                    <a href="">Clear conversations</a>
+                    <a href="">Light mode</a>
+                    <a href="">My account</a>
+                </div>
+            </div>
+            <!-- B chat area = chat_monitor + input_area -->
+            <div class="chat_area">
+                <div class="chat_monitor" id="chat_container" >
+                    <!-- <div class="chat_monitor_left"></div>
+                    <div class="chat_monitor_right"></div> -->
+                </div>
+                <div class="input_area">
+                    <div class="input_mode">
+                        <div class="input_mode_plus">
+                            <!-- <label for="topic_select">select a mode</label> -->
+                            <!-- <select name="chat_mode" id="">
+                                <option value="new_concept">select a topic</option>
+                                <option value="compose">compose</option>
+                                <option value="compose">new concept</option>
+                            </select> -->
+                            <button>New concept</button>
+                        </div>
+                        <div class="input_mode_chat"><button>chat</button></div>
+                    </div>
+                    <form class="input" id="form">
+                        <input type="text" name="inputMessage" placeholder="Send a message...">
+                        <button class="send_btn" type="submit">send</button>
+                    </form>
+                    <div class="blank" ></div>
+                </div>
+            </div>
+
+            <!-- C  setting area-->
+            <div class="setting_area">
+                <div class="model">
+                    <span>Model</span>
+                    <select name="model" id="model">
+                        <option value="text-davinci-003">text-davinci-003</option>
+                        <option value="gpt-3.5-turbo">gpt-3.5-turbo</option>
+                    </select>
+                </div>
+                <div class="temperature">
+                    <div class="span">
+                        <span>temperature</span>
+                        <input type="text">
+                    </div>
+                    <div class="range_bar">
+                        <input type="range" min="0" max="2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

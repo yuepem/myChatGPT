@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;font-size: large;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 240px 1fr 240px;
+    gap: 5px;
+    padding-top: 10px;
+}
+
+/* <!-- A chat list --> */
+
+.chat_list {
+    /* background-color: #316B83; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* color: aliceblue; */
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* div 1 newChatButton */
+
+.newChatButton {
+    /* background-color: aliceblue; */
+    /* height: 6%; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border-bottom: 2px solid black; */
+    gap: 5px;
+}
+
+.newChatButton a {
+    text-decoration: none;
+    /* color: aliceblue; */
+    color: black;
+    padding: 10px;
+}
+
+.new_chat {
+    height: 50%;
+    /* text-align: center; */
+    /* margin-top:auto; */
+    /* background-color: #57C5B6; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.chat_channel {
+    display: flex;
+    /* background-color: aqua; */
+    height: 50%;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+
+.chat_channel_a {
+    /* background-color: antiquewhite; */
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 15px;
+   
+
+}
+.chat_channel_b {
+    /* background-color: antiquewhite; */
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 15px;
+}
+
+/*  div 2 chat_item */
+
+.chat_item {
+    /* background-color: #9a9c9c; */
+    height: 80%;
+    overflow-y: scroll;
+}
+
+.chat_item li {
+    list-style: none;
+    padding: 15px;
+    /* border: 1px solid black;   */
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+/* div 3 account */
+
+.account {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+}
+
+.account a {
+    text-decoration: none;
+    /* color: aliceblue; */
+    color: black;
+    /* font-size: 20px; */
+    padding: 15px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+
+/* :hover */
+
+.account a:hover {
+    background-color: #C8C6C6;
+    color: aliceblue;
+}
+
+.chat_item li:hover {
+    background-color: #C8C6C6;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.newChatButton .new_chat:hover {
+    background-color: #C8C6C6;
+    cursor: pointer;
+}
+.newChatButton .chat_channel_a:hover {
+    background-color: #C8C6C6;
+    cursor: pointer;
+}
+.newChatButton .chat_channel_b:hover {
+    background-color: #C8C6C6;
+    cursor: pointer;
+}
+
+
+/* B chat area = chat_monitor + input_area */
+
+.chat_area {
+    background-color: #F0EEED;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.chat_monitor {
+    height: 86%;
+    /* background-color: #c1c4c4; */
+}
+
+/* ------------  from script.js ------------- */
+.chat-row {
+    margin: 10px 0;
+    background-color: rgb(177, 177, 177);
+}
+
+.ai {
+    background-color: #e0e0e0;
+}
+
+.chat-row-content {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    
+}
+
+.role {
+    width: 50px;
+    /* background-color: #57C5B6; */
+    text-align: center;
+}
+
+
+
+
+
+
+
+.input_area {
+    display : flex;
+    /* background-color: #6e6e6e; */
+    height: 14%;
+    /* width: 100%; */
+}
+
+.input_mode {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #57C5B6; */
+    height: 100%;
+    max-width: 240px;
+    min-width: 160px;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 10px; */
+}
+
+.input_mode button {
+    font-size: 0.7rem;
+    /* font-weight: 500; */
+    width: 120px;
+    padding: 10px;
+    margin: 5px auto;
+    border-radius: 10px;
+    /* background-color: #9a9c9c; */
+}
+
+.input_mode button:hover {
+    background-color: #C8C6C6;
+    
+}
+
+.input {
+    flex: 6;
+    /* background-color: #b3b9b9; */
+    display: flex; 
+    flex-direction: column;
+    /* display: block; */
+    position: relative;
+    justify-content: center;
+}
+
+.input input {
+    width: 90%;
+    /* max-width: 800px; */
+    /* background-color: #9a9c9c; */
+    height: 60px;
+    margin: 20px auto;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    /* font-size: large; */
+}
+
+.input button {
+    position: absolute;
+    right: 6%;
+    /* top: 35%; */
+    /* height: 50px; */
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.blank {
+    flex: 1;
+    max-width: 240px;
+    /* background-color: #159895; */
+}
+
+
+
+/* C  setting area */
+
+
+.setting_area {
+    /* background-color: #1A5F7a; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    gap: 30px;
+    border-radius: 15px;
+}
+
+.setting_area .model {
+    display: flex;
+    flex-direction: column;
+}
+
+.model select {
+    padding: 15px 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.setting_area .temperature {
+    display: flex;
+    flex-direction: column;
+}
+
+.temperature .span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.temperature .span input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    /* margin-top: 10px; */
+    width: 50px;
+    border: none;
+}
+
+.temperature .range_bar input {
+    width: 100%;
+    margin-top: 15px;
+    color: #b3b9b9;
+}
+
+.temperature .span input:hover {
+    border: 1px solid gray;
+}
+
