@@ -1,5 +1,8 @@
 ## Description
-This web application is a similar to official chatGPT of  **bold openAI **.
+This web application is a similar to official chatGPT of  openAI.
+
+## screenshot
+![chatGPT](./client/public/image/ui.png)
 
 ## features
 
@@ -13,6 +16,7 @@ This web application is a similar to official chatGPT of  **bold openAI **.
 2. change the arguments of api;
     1. temperature;
     2. max_token;
+    3. more;
 
 ### chat List
 1. start a new conversation;
